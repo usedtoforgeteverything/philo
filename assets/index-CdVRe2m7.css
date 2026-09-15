@@ -1,0 +1,1 @@
+:root{--font-body: system-ui, -apple-system, "Segoe UI", sans-serif;--color-bg: #fafaf9;--color-fg: #1c1917;--space-1: .5rem;--space-2: 1rem;--space-3: 1.5rem}body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(--font-body)}main.svelte-1n46o8q{padding:var(--space-3)}h1.svelte-1n46o8q{margin:0 0 var(--space-2)}p.svelte-1n46o8q{margin:0}
