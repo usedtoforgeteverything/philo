@@ -2,18 +2,64 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="theme-color" content="#fafaf9" />
+    <!-- viewport-fit=cover : le contenu passe sous la barre d'état (SPEC §5 bis, point 3).
+         user-scalable=no : le zoom à deux doigts trahirait une page web. -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#fafaf9" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1c1917" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <!-- black-translucent : pas de bandeau opaque au-dessus de l'application. -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Philo" />
+    <meta name="format-detection" content="telephone=no" />
     <link rel="icon" href="/philo/icons/icon-192.png" type="image/png" />
     <link rel="apple-touch-icon" href="/philo/icons/icon-192.png" />
+    <!-- Écrans de lancement : bloc réécrit par `pnpm splash`, ne pas éditer à la main. -->
+    <!-- splash:début -->
+    <link rel="apple-touch-startup-image" media="(prefers-color-scheme: dark) and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/philo/splash/iphone-se-sombre.png" />
+    <link rel="apple-touch-startup-image" media="(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/philo/splash/iphone-8-plus-sombre.png" />
+    <link rel="apple-touch-startup-image" media="(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/philo/splash/iphone-xr-sombre.png" />
+    <link rel="apple-touch-startup-image" media="(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/philo/splash/iphone-xs-max-sombre.png" />
+    <link rel="apple-touch-startup-image" media="(prefers-color-scheme: dark) and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/philo/splash/iphone-x-sombre.png" />
+    <link rel="apple-touch-startup-image" media="(prefers-color-scheme: dark) and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/philo/splash/iphone-13-sombre.png" />
+    <link rel="apple-touch-startup-image" media="(prefers-color-scheme: dark) and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/philo/splash/iphone-14-pro-sombre.png" />
+    <link rel="apple-touch-startup-image" media="(prefers-color-scheme: dark) and (device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/philo/splash/iphone-16-pro-sombre.png" />
+    <link rel="apple-touch-startup-image" media="(prefers-color-scheme: dark) and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/philo/splash/iphone-14-plus-sombre.png" />
+    <link rel="apple-touch-startup-image" media="(prefers-color-scheme: dark) and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/philo/splash/iphone-15-pro-max-sombre.png" />
+    <link rel="apple-touch-startup-image" media="(prefers-color-scheme: dark) and (device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/philo/splash/iphone-16-pro-max-sombre.png" />
+    <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/philo/splash/iphone-se-clair.png" />
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/philo/splash/iphone-8-plus-clair.png" />
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/philo/splash/iphone-xr-clair.png" />
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/philo/splash/iphone-xs-max-clair.png" />
+    <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/philo/splash/iphone-x-clair.png" />
+    <link rel="apple-touch-startup-image" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/philo/splash/iphone-13-clair.png" />
+    <link rel="apple-touch-startup-image" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/philo/splash/iphone-14-pro-clair.png" />
+    <link rel="apple-touch-startup-image" media="(device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/philo/splash/iphone-16-pro-clair.png" />
+    <link rel="apple-touch-startup-image" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/philo/splash/iphone-14-plus-clair.png" />
+    <link rel="apple-touch-startup-image" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/philo/splash/iphone-15-pro-max-clair.png" />
+    <link rel="apple-touch-startup-image" media="(device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/philo/splash/iphone-16-pro-max-clair.png" />
+    <!-- splash:fin -->
     <title>Philo</title>
-    <script type="module" crossorigin src="/philo/assets/index-S72Lt8Ya.js"></script>
-    <link rel="stylesheet" crossorigin href="/philo/assets/index-CdVRe2m7.css">
-  <link rel="manifest" href="/philo/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/philo/registerSW.js"></script></head>
+    <style>
+      /* Fond posé avant tout rendu : aucun flash blanc entre l'écran de
+         lancement et le premier écran (SPEC §5 bis, point 2). */
+      html {
+        background: #fafaf9;
+      }
+      @media (prefers-color-scheme: dark) {
+        html {
+          background: #1c1917;
+        }
+      }
+    </style>
+    <script type="module" crossorigin src="/philo/assets/index-CCUyiH0N.js"></script>
+    <link rel="stylesheet" crossorigin href="/philo/assets/index-DBaZ9cNY.css">
+  <link rel="manifest" href="/philo/manifest.webmanifest"></head>
   <body>
     <div id="app"></div>
   </body>
