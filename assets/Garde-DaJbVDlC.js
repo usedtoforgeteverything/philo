@@ -1,1 +1,0 @@
-import{p as m,s as v,a as d,z as g,w as n,x as o,i as _,l as i,b as h,g as x,C as b,I as G,n as I}from"./Installation-YW4fj6F1.js";function w(l,s){m(s,!0);let e=v(d(g()));var t=n(),p=o(t);{var u=a=>{var r=n(),f=o(r);b(f,()=>s.children),i(a,r)},c=a=>{G(a,{surTolerance:()=>I(e,!0)})};_(p,a=>{x(e)?a(u):a(c,-1)})}i(l,t),h()}export{w as G};
