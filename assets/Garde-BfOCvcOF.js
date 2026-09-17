@@ -1,1 +1,0 @@
-import{p as m,s as v,a as d,I as g,E as n,F as o,i as _,l as i,b as h,g as b,O as x,J as G,n as I}from"./Installation-E2EXo10S.js";function y(l,s){m(s,!0);let e=v(d(g()));var t=n(),p=o(t);{var u=a=>{var r=n(),f=o(r);x(f,()=>s.children),i(a,r)},c=a=>{G(a,{surTolerance:()=>I(e,!0)})};_(p,a=>{b(e)?a(u):a(c,-1)})}i(l,t),h()}export{y as G};
