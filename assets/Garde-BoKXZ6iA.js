@@ -1,1 +1,0 @@
-import{p as m,s as v,a as d,C as g,z as n,A as o,i as _,l as i,b as h,g as G,G as b,I as x,n as A}from"./Installation-i323GCGm.js";function k(l,s){m(s,!0);let e=v(d(g()));var t=n(),p=o(t);{var u=a=>{var r=n(),f=o(r);b(f,()=>s.children),i(a,r)},c=a=>{x(a,{surTolerance:()=>A(e,!0)})};_(p,a=>{G(e)?a(u):a(c,-1)})}i(l,t),h()}export{k as G};
