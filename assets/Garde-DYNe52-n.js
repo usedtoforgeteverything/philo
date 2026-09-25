@@ -1,0 +1,1 @@
+import{p as m,s as v,a as d,B as h,z as n,A as o,i as _,m as i,c as g,h as G,G as x,I as A,q as I}from"./features-D7P-hVZC.js";function k(p,s){m(s,!0);let e=v(d(h()));var t=n(),c=o(t);{var l=a=>{var r=n(),f=o(r);x(f,()=>s.children),i(a,r)},u=a=>{A(a,{surTolerance:()=>I(e,!0)})};_(c,a=>{G(e)?a(l):a(u,-1)})}i(p,t),g()}export{k as G};
