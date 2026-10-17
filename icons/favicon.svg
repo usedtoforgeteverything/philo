@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" role="img" aria-label="Philo">
+  <title>Philo</title>
+  <!-- Glyphe Φ tracé depuis design/icone/icone-source-conatus.png (Conatus,
+       2026-09-17) par potrace. Le dessin n'a pas été retouché : seule la mise à
+       l'échelle et le centrage sont calculés ici.
+       Fond #1a1916, glyphe #efece4, relevés dans le PNG source.
+       Plein bord, sans coins arrondis : iOS applique son propre masque, et un
+       arrondi dans la source se verrait deux fois (SPEC §9). -->
+  <rect width="1024" height="1024" fill="#1a1916"/>
+  <g transform="translate(0.035,1041.920) scale(0.128000,-0.128000)" fill="#efece4">
+    <path d="M3140 5911 l0 -49 88 -7 c335 -24 463 -133 479 -407 l6 -98 -59 0
+c-210 0 -509 -54 -730 -131 -116 -40 -316 -136 -394 -189 -210 -143 -347 -350
+-403 -610 -25 -117 -29 -367 -8 -475 81 -418 295 -652 767 -838 179 -70 492
+-137 645 -137 31 0 84 -3 118 -6 l61 -7 0 -76 c0 -135 -43 -263 -111 -330 -39
+-40 -127 -84 -198 -101 -30 -7 -99 -15 -155 -19 l-101 -6 -3 -52 -3 -53 861 0
+861 0 -3 52 -3 53 -106 7 c-127 9 -250 45 -310 91 -100 76 -138 163 -146 328
+l-6 106 63 6 c35 4 85 7 111 7 146 0 445 60 624 125 425 154 662 371 758 695
+40 136 51 216 51 365 0 446 -194 778 -563 965 -252 127 -586 210 -908 226
+l-133 7 0 57 c0 175 70 319 183 376 77 40 132 53 265 66 l122 11 0 49 0 48
+-860 0 -860 0 0 -49z m570 -1756 l0 -1034 -67 5 c-253 19 -447 80 -587 184
+-68 50 -163 154 -205 223 -173 292 -196 793 -51 1140 99 238 285 397 550 472
+77 21 222 43 298 44 l62 1 0 -1035z m863 1004 c370 -75 600 -299 687 -672 60
+-258 41 -580 -49 -813 -133 -344 -402 -518 -848 -548 l-73 -5 0 1036 0 1036
+91 -6 c49 -4 136 -16 192 -28z"/>
+  </g>
+</svg>
